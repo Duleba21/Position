@@ -1,4 +1,4 @@
-a{
+.logo{
     display: inline-flex;
     font-size: 3.6rem;
     line-height: 1.16;
@@ -14,22 +14,34 @@ a{
 
 .wrapper{
     display: flex;
+    flex-direction: row;
+    position: relative;
     justify-items:space-between;
     gap: 10px;
-    margin-right: 174.5px;
+    margin-right: 180px;
 }
 
-li > a {
-    font-size: 2.4rem;
-    line-height: 1.16;
-    list-style: none;
-    text-decoration: none;
+.dropdown nav{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0%;  
+    width: 150px;
+    padding: 5px;
     visibility: hidden;
 }
 
-img:hover nav {
+ul a{
+    color: black;
+    text-decoration: none;  
+    font-size: 2.4rem;
+    line-height: 1.16;
+}
 
-visibility: visible;
+.wrapper:hover ul{
+    visibility: visible;
+    background-color: rgb(113, 83, 141);
+    transform: translateX(50%);
 }
 
 
