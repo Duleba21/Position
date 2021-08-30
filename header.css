@@ -6,12 +6,15 @@ html,
 body {
     font-family: Roboto, sans-serif;
     font-size: 10px;
+    height: 1000px;
 }
 header{
     background: #5C6F4E;
     display: flex;
     height: 100px;
     padding: 10px;
+    position: sticky;
+    top: 0px;
 }
 
 .conteiner{
